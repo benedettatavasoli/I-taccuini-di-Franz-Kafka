@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<journal xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://w3.org/2001/XMLSchema-instance" xml:id="LLI">
+  <metadati>
+    <dc:title>Testamente ( Franz Kafkas Nachlassverfügungen)</dc:title>
+    <dc:creator xsi:type="mp:viaf mp:ref=http://viaf.org/viaf/56611857/">Franz Kafka</dc:creator>
+    <dc:subject>archivi, manoscritti, metadati</dc:subject>
+	<dc:subject xsi:type="dcterms:DDC">027</dc:subject>
+	<dc:subject xsi:type="dcterms:DDC">091</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh96000740.html</dc:subject>
+    <dc:description>In una lettera a Max Brod, Kafka gli chiede di impegnarsi nel recuperare le bozze delle sue opere inviate ai corrispondenti dello scrittore e di distruggerle.</dc:description>
+    <dc:date>1922</dc:date>
+    <dc:type>Lettera Immagine Testo</dc:type>
+    <dc:format>File JPEG</dc:format>
+    <dc:format>546 x 851 pixels</dc:format>
+    <dc:identifier>ARC. 4* 2000 05 050</dc:identifier>
+    <dc:language>de</dc:language>
+    <dc:rights>הספרייה הלאומית, ארכיון מכס ברוד The National Library of Israel. Max Brod Archive</dc:rights>
+  </metadati>
+</journal>

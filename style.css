@@ -1,0 +1,594 @@
+* {
+  box-sizing: border-box;
+}
+body {
+	background-color: #6D9886;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	margin: 0;
+	height: 100%;
+	box-sizing: border-box; /*per interoperabilità */
+}
+
+/* header */
+.header {
+	background-color: white;
+  border-style: solid solid solid solid;
+  border-width: 3.5px 3.5px 1px 3.5px;
+}
+.header img {
+  max-height: 170px;
+  object-fit:contain;
+  margin-top: 1%;
+}
+.header h1 {
+	color: black;
+	text-align: center;
+	font-family: Georgia;
+  margin-top: 0px;
+}
+/* navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  /* z-index per assicurarsi sia sempre in primo piano */
+  z-index: 10;
+  background-color: #e6e6e6;
+  /* queste tre righe servono per sistemare la posizione della searchbar, non ho idea*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  border-style: solid;
+  border-width: 3.5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+li a, .dropdown-content a, li button {
+  display: inline-block;
+  color: #666666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li button {
+	border: none;
+	background-color: #e6e6e6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+}
+
+li a:hover, .dropdown:hover .dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar button:hover {
+  background-color: #ddd;
+}
+
+.navbar a.active {
+  background-color: #F4CE14;
+  color: #666666;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*searchbar*/
+.navbar input[type=text] {
+	float: right;
+	display: inline;
+  	padding: 6px;
+  	border: none;
+	margin-right: 16px;
+  	font-size: 15px;
+}
+
+/* index */
+/* accordion*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 2%;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+/* intro */
+.intro {
+	color: black;
+	padding: 5%;
+	background-color: #e6e6e6;
+	margin: 5%;
+	text-align: justify;
+  border-style: solid;
+  border-width: 3.5px;
+}
+.storia {
+  color: black;
+  padding: 5%;
+  background-color: #e6e6e6;
+  margin: 5%;
+  text-align: justify;
+  border-style: solid;
+  border-width: 3.5px;
+}
+/* esplora */
+.esplora {
+	color: black;
+	padding: 5%;
+	background-color: #e6e6e6;
+	margin: 5%;
+	text-align: justify;
+  border-style: solid;
+  border-width: 3.5px;
+}
+
+/* disegni */
+.disegni {
+  color: black;
+  padding: 5%;
+  background-color: #e6e6e6;
+  margin: 5%;
+  text-align: justify;
+  border-style: solid;
+  border-width: 3.5px;
+}
+
+/* slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 450px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img {
+  max-height: 470px;
+  max-width: 700px;
+  object-fit: contain;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* prefooter */
+.prefooter {
+	background-color: #ddd;
+	color: #666666;
+	padding: 1.5%;
+	text-align: center;
+}
+/* footer */
+.footer {
+	background-color: #e6e6e6;
+	color: black;
+	margin-bottom: 0px;
+	padding: 1%; 
+	text-align: center;
+}
+
+/* pagina catalogo */
+
+/* two columns */
+/* left column */
+.leftcolumn {
+  float: left;
+  padding: 15px;
+  width: 20%;
+}
+
+/* right column */
+.rightcolumn {
+  float: right;
+  padding: 15px;
+  width: 80%;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/*breadcrumbs*/
+ul.breadcrumb {
+  padding: 5px 8px;
+  width: 220px;
+	list-style: none;
+	background-color: #e6e6e6;
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 15px;
+}
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+}
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "\003E";
+}
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+	text-decoration: underline;
+}
+
+/*xml*/
+.xml {
+  padding: 5px 8px;
+  width: 220px;
+  list-style: none;
+  background-color: #e6e6e6;
+  border-style: solid;
+  border-width: 3px;
+}
+.xml button {
+  background-color: #b3b3b3;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  width: 90%;
+}
+.btn1 {
+  margin-bottom: 5px;
+}
+/* right column*/
+.container {
+  overflow: hidden;
+}
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+.show {
+  display: block;
+}
+.btn {
+  display: inline-block;
+  background-color: #e6e6e6;
+  color: #666666;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: #cccccc;
+}
+
+
+.row {
+	margin: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* cards */
+.card {
+  position: relative;
+  background-color: #3F3F44;
+  padding: 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height:600px;
+  width: 350px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width:100%;
+  max-height: 400px;
+  object-fit: cover; /*   The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit */
+}
+
+.box {
+  position: absolute;
+  top: 400px;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.box h4 {
+	color: white;
+  margin: 0;
+  padding: 0;
+}
+.box a {
+  color: #0275d8;
+  text-decoration: none;
+}
+.box a:hover {
+  text-decoration: underline;
+}
+
+/* pagination */
+.pagination {
+  font-size: 13px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #30434f;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+
+/* pagina item */
+.colonna1 {
+  float: left;
+  padding: 15px;
+  width: 25%;
+}
+.colonna2 {
+  float: right;
+  padding: 15px;
+  width: 75%;
+}
+.colonna2 h2 {
+  background-color: #e6e6e6;
+  padding: 2%;
+  border-style: solid;
+  border-width: 3px;
+}
+.colonna2 img {
+  max-width: 90%;
+  object-fit: contain;
+  margin-bottom: 2%;
+  /* centriamo l'immagine */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.descrizione {
+  background-color: #e6e6e6;
+  padding: 2%;
+  margin-bottom: 2%;
+  border-style: solid;
+  border-width: 3px;
+}
+.trascrizione {
+  background-color: #e6e6e6;
+  padding: 2%;
+  margin-bottom: 2%;
+  width: 50%;
+  float: left;
+  height: 820px;
+  overflow: auto;
+  border-style: solid none solid solid;
+  border-width: 3px;
+  line-height: 1.4;
+}
+.traduzione {
+  background-color: #e6e6e6;
+  padding: 2%;
+  margin-bottom: 2%;
+  width: 50%;
+  float: right;
+  height: 820px;
+  border-style: solid solid solid none;
+  border-width: 3px;
+  line-height: 1.4;
+}
+.metadati {
+  background-color: #e6e6e6;
+  padding: 2%;
+  width: 100%;
+  margin-bottom: 2%;
+  border-style: solid;
+  border-width: 3px;
+}
+.metadati a {
+  text-decoration: none;
+}
+.correlati {
+  padding: 2%;
+  background-color: #e6e6e6;
+  margin-bottom: 2%;
+  border-style: solid;
+  border-width: 3px;
+  height: 420px;
+}
+/*galleria correlati*/
+div.gallery img:hover {
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery img {
+  width: auto;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

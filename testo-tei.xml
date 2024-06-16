@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lettera di Franz a Max</title>
+                <author>Franz</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Non pubblicato</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Lettera privata</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="letter">
+                <opener>
+                    <salute>Caro Max,</salute>
+                </opener>
+                <p>Forse questa volta non mi rialzerò più, l'arrivo della polmonite è, dopo un mese di febbre polmonare, abbastanza probabile e nemmeno il fatto che io lo scriva riuscirà a scongiurarlo, nonostante abbia un certo potere.</p>
+                <p>Per questo motivo, quindi, il mio ultimo desiderio riguardo a tutto ciò che ho scritto: Di tutto quello che ho scritto, valgono solo i libri: <title type="book">Il verdetto</title>, <title type="book">Meditazione</title>, <title type="book">La metamorfosi</title>, <title type="book">Nella colonia penale</title>, <title type="book">Il medico di campagna</title> e il racconto: <title type="book">Un artista del digiuno</title>. (Le poche copie di <title type="book">Meditazione</title> possono rimanere, non voglio imporre a nessuno la fatica di distruggerle, ma non deve essere ristampato nulla da essa). Quando dico che quei cinque libri e il racconto valgono, non intendo dire che desidero che vengano ristampati e tramandati alle future generazioni, al contrario, se dovessero andare completamente perduti, corrisponderebbe al mio vero desiderio. Solo che, dato che esistono già, non impedisco a nessuno di conservarli, se lo desidera.</p>
+                <p>Invece, tutto ciò che è scritto da me e che si trova altrove (stampato su riviste, manoscritti o lettere) deve senza eccezioni, nella misura in cui è accessibile o recuperabile dai destinatari (conosci la maggior parte dei destinatari, principalmente si tratta della signora F.M., della signora Julte nata H. e della signora K.P., non dimenticare in particolare alcuni quaderni che ha la signora P.) - tutto questo deve essere senza eccezioni bruciato, preferibilmente senza essere letto (ma non posso impedirti di dare un'occhiata, anche se preferirei che tu non lo facessi, comunque nessun altro deve guardarlo) - tutto questo deve senza eccezioni essere bruciato e ti chiedo di farlo il più presto possibile.</p>
+                <closer>
+                    <signed>Franz</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>
