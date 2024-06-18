@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<lettera type="inviata">
-  <metadati>
-    <mittente>
-      <nome>Franz Kafka</nome>
-    </mittente>
-    <destinatario>
-      <nome>Max Brod</nome>
-    </destinatario>
-  </metadati>
+<lettera type="inviata" mittente="Franz Kafka" destinatario="Max Brod">
   <corpo>
     <incipit>Caro Max,</incipit>
     <paragrafo>Forse questa volta non mi rialzerò più, l'arrivo della polmonite è, dopo un mese di febbre polmonare, abbastanza probabile e nemmeno il fatto che io lo scriva riuscirà a scongiurarlo, nonostante abbia un certo potere.</paragrafo>
