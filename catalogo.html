@@ -4,34 +4,41 @@
 		<title>Catalogo - I taccuini di Franz Kafka</title>
 		<!--slash alla fine lo rende una notazione valida per xml -->
 		<meta charset="utf-8" />
-		<meta name="description" content="Sito dedicato a Kafka" />
-		<meta name="keywords" content="romanzo, letteratura, strumenti di navigazione" />
-		<meta name="author" content="Benedetta Tavasoli">
+		<meta name="DC.Title" content="I taccuini di Franz Kafka">
+	    	<meta name="DC.Creator" content="Benedetta Tavasoli">
+	    	<meta name="DC.Subject" content="Manoscritti di Franz Kafka">
+	    	<meta name="DC.Description" content="Storia e catalogo dell'archivio Max Brod che conserva manoscritti, disegni e appunti di Kafka">
+	    	<meta name="DC.Date" content="2024-06-07">
+	    	<meta name="DC.Type" content="Sito web">
+	    	<meta name="DC.Format" content="HTML/CSS/JS">
+	    	<link rel="DC.Identifier" href="https://benedettatavasoli.github.io/I-taccuini-di-Franz-Kafka/">
+	    	<meta name="DC.Language" content="it">
+		<meta name="DC.Rights"content=" https://creativecommons.org/share-your-work/)">
 		<!--garantisce che si adatti alla schermata di vari device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
 		<div class="header">
-      <!--immagine con titolo -->
-      <center><img src="img/metamorfosi.png" alt="Franz Kafka"></center>
-      <h1>I taccuini di Franz Kafka</h1>  
-    </div>
+     		 <!--immagine con titolo -->
+      		 <center><img src="img/metamorfosi.png" alt="Franz Kafka"></center>
+      		 <h1>I taccuini di Franz Kafka</h1>  
+    		</div>	
 		<div class="navbar">
 			<ul>
 				<li><a href="index.html" title="Link alla home">Home</a></li>
 				<li><a href="#" title="Link alla pagina Introduzione">Introduzione</a></li>
 				<li><a href="#" title="Link alla pagina L'autore">L'autore</a></li>
 				<li class="dropdown">
-      		<a href="#" class="active" class="dropbtn">Catalogo</a>
-      		  <div class="dropdown-content">
-              <a href="catalogo.html">Catalogo completo</a>
-        		  <a href="#">Manoscritti</a>
-        			<a href="#">Disegni</a>
-        			<a href="#">Lettere</a>
-        			<a href="#">Linea del tempo</a>
-        		</div>
-        </li>
+      				  <a href="#" class="active" class="dropbtn">Catalogo</a>
+      		  		  <div class="dropdown-content">
+              			   	<a href="catalogo.html">Catalogo completo</a>
+        		  		<a href="#">Manoscritti</a>
+        				<a href="#">Disegni</a>
+        				<a href="#">Lettere</a>
+        				<a href="#">Linea del tempo</a>
+        			  </div>
+       				</li>
 			</ul>
 			<div id="searchbar">
 			<input type="text" placeholder="Cerca sul sito">
@@ -44,8 +51,8 @@
 				<!--metti le breadcrumbs -->
 				<div class="breadcrumb">
 					<ul class="breadcrumb">
-  					<li><a href="index.html">Home</a></li>
-						<li><a href="#">Catalogo</a></li>
+  					  <li><a href="index.html">Home</a></li>
+					  <li><a href="#">Catalogo</a></li>
 					</ul> 
 				</div>
 			</div>
@@ -54,115 +61,115 @@
 				<h2>Catalogo</h2>
 				<!-- tabs (il castello, lettera al padre) -->
 				<h3>Filtri</h3>
-        <!-- Control buttons -->
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Tutto il catalogo </button>
-          <button class="btn" onclick="filterSelection('lettere')"> Lettere</button>
-          <button class="btn" onclick="filterSelection('disegni')"> Disegni</button>
-          <button class="btn" onclick="filterSelection('manoscritto')"> Manoscritti</button>
-          <button class="btn" onclick="filterSelection('castello')"> Il Castello</button>
-        </div>
-        <!-- riga 1 -->
-        <div class="row">
-          <div class="column">
-            <div class="card filterDiv lettere">
-            	<img src="img/lettere/lettera_max1.jpeg" alt="Nota a Max Brodt">
-              <div class="box">
-                <h4><b>Nota a Max Brodt</b></h4>
-                <a href="item.html" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card filterDiv lettere">
-              <img src="img/lettere/lettera_felice.jpeg" alt="Lettera a Felice Bauer">
-              <div class="box">
-                <h4><b>Lettera a Felice Bauer</b></h4>
-                <a href="item.html" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card filterDiv lettere">
-              <img src="img/lettere/cartolina.jpeg" alt="Cartolina ai genitori" >
-              <div class="box">
-                <h4><b>Cartolina ai genitori</b></h4>
-                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- riga 2 -->
-        <div class="row">
-          <div class="column">
-          	<div class="card filterDiv disegni">
-            	<img src="img/disegni/ritratti.jpeg" alt="Autoritratto e ritratto della madre" >
-              <div class="box">
-                <h4><b>Autoritratto e ritratto della madre</b></h4>
-                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-          	<div class="card filterDiv disegni">
-            	<img src="img/disegni/masse.jpeg" alt="Disegno di una folla" >
-              <div class="box">
-                <h4><b>Disegno di una folla</b></h4>
-                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-          	<div class="card filterDiv disegni">
-            	<img src="img/disegni/ubriaco.jpeg" alt="Disegno di un ubriaco" >
-              <div class="box">
-                <h4><b>Disegno di un ubriaco</b></h4>
-                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--riga 3-->
-        <div class="row">
-          <div class="column">
-            <div class="card filterDiv manoscritto">
-              <img src="img/castello/manoscritto_lettera_padre.jpeg" alt="Manoscritto Lettera al padre">
-              <div class="box">
-                <h4><b>Manoscritto Lettera al padre</b></h4>
-                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card filterDiv manoscritto castello">
-              <img src="img/castello/castello-1.jpeg" alt="Manoscritto Il Castello">
-              <div class="box">
-                <h4><b>Manoscritto Il castello(1)</b></h4>
-                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card filterDiv manoscritto castello">
-              <img src="img/castello/castello-2.jpeg" alt="Manoscritto Il Castello" >
-              <div class="box">
-                <h4><b>Manoscritto Il castello(2)</b></h4>
-                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- pagination -->
-        <div class="pagination">
-          <a href="#" title="Prev">&laquo;</a>
-          <a href="#" class="active" title="1">1</a>
-          <a href="#" title="2">2</a>
-          <a href="#" title="3">3</a>
-          <a href="#" title="4">4</a>
-          <a href="#" title="5">5</a>
-          <a href="#" title="6">6</a>
-          <a href="#" title="Next">&raquo;</a>
-        </div>
+			        <!-- Control buttons -->
+			        <div id="myBtnContainer">
+			          <button class="btn active" onclick="filterSelection('all')"> Tutto il catalogo </button>
+			          <button class="btn" onclick="filterSelection('lettere')"> Lettere</button>
+			          <button class="btn" onclick="filterSelection('disegni')"> Disegni</button>
+			          <button class="btn" onclick="filterSelection('manoscritto')"> Manoscritti</button>
+			          <button class="btn" onclick="filterSelection('castello')"> Il Castello</button>
+			        </div>
+			        <!-- riga 1 -->
+			        <div class="row">
+			          <div class="column">
+			            <div class="card filterDiv lettere">
+			            	<img src="img/lettere/lettera_max1.jpeg" alt="Nota a Max Brodt">
+			              <div class="box">
+			                <h4><b>Nota a Max Brodt</b></h4>
+			                <a href="item.html" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="column">
+			            <div class="card filterDiv lettere">
+			              <img src="img/lettere/lettera_felice.jpeg" alt="Lettera a Felice Bauer">
+			              <div class="box">
+			                <h4><b>Lettera a Felice Bauer</b></h4>
+			                <a href="item.html" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="column">
+			            <div class="card filterDiv lettere">
+			              <img src="img/lettere/cartolina.jpeg" alt="Cartolina ai genitori" >
+			              <div class="box">
+			                <h4><b>Cartolina ai genitori</b></h4>
+			                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			        <!-- riga 2 -->
+			        <div class="row">
+			          <div class="column">
+			          	<div class="card filterDiv disegni">
+			            	<img src="img/disegni/ritratti.jpeg" alt="Autoritratto e ritratto della madre" >
+			              <div class="box">
+			                <h4><b>Autoritratto e ritratto della madre</b></h4>
+			                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="column">
+			          	<div class="card filterDiv disegni">
+			            	<img src="img/disegni/masse.jpeg" alt="Disegno di una folla" >
+			              <div class="box">
+			                <h4><b>Disegno di una folla</b></h4>
+			                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="column">
+			          	<div class="card filterDiv disegni">
+			            	<img src="img/disegni/ubriaco.jpeg" alt="Disegno di un ubriaco" >
+			              <div class="box">
+			                <h4><b>Disegno di un ubriaco</b></h4>
+			                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			        <!--riga 3-->
+			        <div class="row">
+			          <div class="column">
+			            <div class="card filterDiv manoscritto">
+			              <img src="img/castello/manoscritto_lettera_padre.jpeg" alt="Manoscritto Lettera al padre">
+			              <div class="box">
+			                <h4><b>Manoscritto Lettera al padre</b></h4>
+			                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="column">
+			            <div class="card filterDiv manoscritto castello">
+			              <img src="img/castello/castello-1.jpeg" alt="Manoscritto Il Castello">
+			              <div class="box">
+			                <h4><b>Manoscritto Il castello(1)</b></h4>
+			                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="column">
+			            <div class="card filterDiv manoscritto castello">
+			              <img src="img/castello/castello-2.jpeg" alt="Manoscritto Il Castello" >
+			              <div class="box">
+			                <h4><b>Manoscritto Il castello(2)</b></h4>
+			                <a href="#" title="Vai all'opera">Vedi nel dettaglio</a>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			        <!-- pagination -->
+			        <div class="pagination">
+			          <a href="#" title="Prev">&laquo;</a>
+			          <a href="#" class="active" title="1">1</a>
+			          <a href="#" title="2">2</a>
+			          <a href="#" title="3">3</a>
+			          <a href="#" title="4">4</a>
+			          <a href="#" title="5">5</a>
+			          <a href="#" title="6">6</a>
+			          <a href="#" title="Next">&raquo;</a>
+			        </div>
 			</div> <!-- chiude rightcolumn -->
 		</div> <!--chiude row -->
 		<div class="prefooter">
