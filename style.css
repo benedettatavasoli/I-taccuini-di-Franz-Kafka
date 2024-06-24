@@ -2,19 +2,19 @@
   box-sizing: border-box;
 }
 body {
-	background-color: #6D9886;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 17px;
-	margin: 0;
-	height: 100%;
-	box-sizing: border-box; /*per interoperabilità */
+  background-color: #6D9886;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box; /*per interoperabilità */
 }
 
 /* header */
 .header {
-	background-color: white;
-  border-style: solid solid solid solid;
-  border-width: 3.5px 3.5px 1px 3.5px;
+ background-color: white;
+ border-style: solid solid solid solid;
+ border-width: 3.5px 3.5px 1px 3.5px;
 }
 .header img {
   max-height: 170px;
@@ -22,9 +22,9 @@ body {
   margin-top: 1%;
 }
 .header h1 {
-	color: black;
-	text-align: center;
-	font-family: Georgia;
+  color: black;
+  text-align: center;
+  font-family: Georgia;
   margin-top: 0px;
 }
 /* navbar */
@@ -34,12 +34,12 @@ body {
   /* z-index per assicurarsi sia sempre in primo piano */
   z-index: 10;
   background-color: #e6e6e6;
-  /* queste tre righe servono per sistemare la posizione della searchbar, non ho idea*/
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
   border-style: solid;
   border-width: 3.5px;
+  /* queste tre righe servono per sistemare la posizione della searchbar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
@@ -50,7 +50,7 @@ ul {
 }
 
 li {
-	float: left;
+  float: left;
 }
 
 li a, .dropdown-content a, li button {
@@ -61,10 +61,10 @@ li a, .dropdown-content a, li button {
   text-decoration: none;
 }
 li button {
-	border: none;
-	background-color: #e6e6e6;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 17px;
+  border: none;
+  background-color: #e6e6e6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
 }
 
 li a:hover, .dropdown:hover .dropdown-content a:hover {
@@ -102,12 +102,12 @@ li a:hover, .dropdown:hover .dropdown-content a:hover {
 
 /*searchbar*/
 .navbar input[type=text] {
-	float: right;
-	display: inline;
-  	padding: 6px;
-  	border: none;
-	margin-right: 16px;
-  	font-size: 15px;
+  float: right;
+  display: inline;
+  padding: 6px;
+  border: none;
+  margin-right: 16px;
+  font-size: 15px;
 }
 
 /* index */
@@ -134,11 +134,11 @@ li a:hover, .dropdown:hover .dropdown-content a:hover {
 }
 /* intro */
 .intro {
-	color: black;
-	padding: 5%;
-	background-color: #e6e6e6;
-	margin: 5%;
-	text-align: justify;
+  color: black;
+  padding: 5%;
+  background-color: #e6e6e6;
+  margin: 5%;
+  text-align: justify;
   border-style: solid;
   border-width: 3.5px;
 }
@@ -153,11 +153,11 @@ li a:hover, .dropdown:hover .dropdown-content a:hover {
 }
 /* esplora */
 .esplora {
-	color: black;
-	padding: 5%;
-	background-color: #e6e6e6;
-	margin: 5%;
-	text-align: justify;
+  color: black;
+  padding: 5%;
+  background-color: #e6e6e6;
+  margin: 5%;
+  text-align: justify;
   border-style: solid;
   border-width: 3.5px;
 }
@@ -269,18 +269,18 @@ li a:hover, .dropdown:hover .dropdown-content a:hover {
 
 /* prefooter */
 .prefooter {
-	background-color: #ddd;
-	color: #666666;
-	padding: 1.5%;
-	text-align: center;
+  background-color: #ddd;
+  color: #666666;
+  padding: 1.5%;
+  text-align: center;
 }
 /* footer */
 .footer {
-	background-color: #e6e6e6;
-	color: black;
-	margin-bottom: 0px;
-	padding: 1%; 
-	text-align: center;
+  background-color: #e6e6e6;
+  color: black;
+  margin-bottom: 0px;
+  padding: 1%; 
+  text-align: center;
 }
 
 /* pagina catalogo */
@@ -310,8 +310,8 @@ li a:hover, .dropdown:hover .dropdown-content a:hover {
 ul.breadcrumb {
   padding: 5px 8px;
   width: 220px;
-	list-style: none;
-	background-color: #e6e6e6;
+  list-style: none;
+  background-color: #e6e6e6;
   border-style: solid;
   border-width: 3px;
   margin-bottom: 15px;
@@ -334,7 +334,7 @@ ul.breadcrumb li a {
 }
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*xml*/
@@ -392,7 +392,7 @@ ul.breadcrumb li a:hover {
 
 
 .row {
-	margin: 20px;
+  margin: 20px;
 }
 .row:after {
   content: "";
@@ -431,7 +431,7 @@ ul.breadcrumb li a:hover {
   text-align: left;
 }
 .box h4 {
-	color: white;
+  color: white;
   margin: 0;
   padding: 0;
 }
