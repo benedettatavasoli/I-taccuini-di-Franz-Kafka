@@ -7,7 +7,14 @@
                 <author>Franz Kafka</author>
             </titleStmt>
             <publicationStmt>
-                <p>Non pubblicato</p>
+                <availability status="online">
+                    <p>Disponibile online presso la Biblioteca di Israele</p>
+                    <ref target="https://www.nli.org.il/en/archives/NNL_ARCHIVE_AL997007755180505171/NLI#$FL166062095">Link alla Biblioteca di Israele</ref>
+                </availability>
+                <respStmt>
+                    <resp>Responsabile della disponibilità online</resp>
+                    <name>Biblioteca di Israele</name>
+                </respStmt>
             </publicationStmt>
             <sourceDesc>
                 <p>Lettera privata</p>
